@@ -1,9 +1,9 @@
 Python3.7以上で(開発環境は3.8)  
 必要なパッケージ
 - scrapy
-- pands
+- pandas
 - pyyaml
-- feedparaser
+- feedparser
 
 windowsはscrapyをインストールするときVisual C++のコンパイラが必要なので注意  
 ダウンロード  
@@ -12,7 +12,8 @@ Build Tools for Visual Studioを選んでダウンロード
 
 windowsはstart_scraping.batをタスクスケジューラーに  
 linuxはstart_scraping.bashをcronに  
-それぞれ登録してください  
+それぞれ登録してください
+macもcronが使えます。
 RSSは最大で50件までしかニュースを保持しないので実行間隔を開けすぎると回収漏れが出てきます  
 15分程度を目安に今のところ運用しています  
 検索したキーワードが含まれているデータはURL_list_keyword_include.txtに保存されます    
